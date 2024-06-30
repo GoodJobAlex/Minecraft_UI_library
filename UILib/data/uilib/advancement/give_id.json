@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requilibrement": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "uilib:minecart_interaction/set_up_minecart"
+    }
+}

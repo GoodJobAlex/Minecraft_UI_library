@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": "{default_trigger:1b}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "uilib:minecart_interaction/trigger"
+    }
+  }
+  
