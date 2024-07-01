@@ -2,7 +2,7 @@
 An UI library which allows you to easily customize an UI, but requires you to add the logics of the buttons and stuff. Potential drawbacks include: resourcepack required, completely disable custom display tile for minecarts. Another route you can take is to use chest boats, but will face complete removal of one of the chest boats from the game
 # How to use
 **add new pages:**   
-summon any chest minecart, click into it, place all of the items you want in your page (With components) and run function uilib:ui_internal/new_page as the chest minecart. Note, you can name the item you are holding to give custom name to your page.   
+summon any chest minecart, click into it, place all of the items you want in your page (With components) and run function uilib:api/new_page as the chest minecart. Note, you can name the item you are holding to give custom name to your page.   
 
 **Access:**   
 /give @p compass[custom_data={default_trigger:1b,interaction:key,starting_page:0},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:100000}] 1  
