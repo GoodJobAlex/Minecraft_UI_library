@@ -6,15 +6,18 @@ summon any chest minecart, click into it, place all of the items you want in you
 
 **Access:**   
 /give @p compass[custom_data={default_trigger:1b,interaction:key,starting_page:0},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:100000}] 1  
-remember to put the item you are using for the key inside the trigger item tag.
+remember to put the item you are using for the key inside the trigger item tag file.
 
 **BuiltInFunctions:**   
-the starting_slide custom_tag decides which page you are in when you access the ui through that item.   
-use these two to change slide-> scoreboard players set @p uilib.page ? + function uilib:ui_internal/switch_page   
-also you can run function uilib:minecart_interaction/moved to quit
+**functions uilib:api/new_page** -> execute as a minecart  
+**functions uilib:api/switch_page** -> execute as the minecart and at the player    
+**functions uilib:api/refresh** -> execute as the minecart and at the player    
+**functions uilib:api/quit** -> execute as the minecart and at the player    
+To execute at the player and as the minecart do -> **execute as player at @s as @e[type=item_display,tag=interaction] if score @s uilib.id = @p uilib.id on passengers if entity @s[type=chest_minecart] run ...**      
+Main is already ran at the player and and as its chest minecart.
 
 **How to add custom functions:**   
-First Note that the functions is ran as the minecart and at the player.      
+First, the functions is ran as the minecart and at the player, becuase the functions you add will be automatically ran in main.      
 add a header named uilib in your datapack, then add an function tag called ui_logics in it, and add your own function in side the tag file.     
 An example has been done for you which allows you to take item with custom tag ui_clear:0b out of the ui.      
 
