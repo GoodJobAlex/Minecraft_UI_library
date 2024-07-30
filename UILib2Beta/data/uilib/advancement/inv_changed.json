@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "count": {
+              "min": 1,
+              "max": 64
+            },
+            "predicates": {
+              "minecraft:custom_data": "{ui:item}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "uilib:ui_internal/clearall"
+  }
+}

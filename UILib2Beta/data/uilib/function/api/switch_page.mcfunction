@@ -1,0 +1,1 @@
+function uilib:ui_internal/switch_page
