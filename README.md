@@ -9,6 +9,8 @@ summon any chest minecart, click into it, place all of the items you want in you
 /give @p compass[custom_data={default_trigger:1b,interaction:key,starting_page:0},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:100000}] 1  
 remember to put the item you are using for the key inside the trigger item tag file.
 
+**For the new beta everything is the same except you don't need food now, and you can click once to trigger**    
+
 **BuiltInFunctions:**   
 **functions uilib:api/new_page** -> execute as a minecart  
 **functions uilib:api/switch_page** -> execute as the minecart and at the player    
